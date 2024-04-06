@@ -1,54 +1,103 @@
 <!DOCTYPE html>
 <html>
-    <script>alert("Hello! My name is Clayton and this is all about me! Click OK to begin")
+    <script>
+        function find_me(div_id) {
+            console.log('you clicked me! 1');
+            var div = document.getElementById(div_id);
+            div.scrollIntoView({behavior:"instant", block:"start"});
+            console.log('you clicked me! 2');
+        }
     </script>
     <head>
-        <title><h1>all about me!</h1></title>
+        <title>Personal Profile</title>
+        <style>
+        button{
+            margin-left: 5%;
+            color: midnightblue;
+            background-color: mediumturquoise;
+        }
+        .menu{
+            display: flex;
+            flex-direction: 1;
+            top: 0;
+            left: 0;
+            position:sticky;
+            margin: 0 auto;
+            margin-top: 24px;
+            margin-bottom: 24px;
+            background-color: darkgray;
+            z-index: 10000;
+        }
+        .container{
+            position: relative;
+            top: 50;
+            margin-left: 5%;
+        }
+
+        </style>
+            
     </head>
     <body>
-    <h1>all about me!</h1><h2>me</h2><h3>me</h3><h4>me</h4><h5>me</h5><h6>me</h6><p>me.</p>
-        <img src="diamond.jpg" alt="a diamond i have accualy drawn before "style width="480px"/>
-        <p style="text-align: center;"border: 520px;>The monk Diamond</p>
-        <style>
-            h4{
-                color: rgb(67, 199, 155);
-                text-underline-position: above;
-            }
-            h2{
-                color:blue;
-                text-underline-position:auto;
-            }
-            h3{
-                color: mediumspringgreen;
-                border: 5px solid rgb(67, 199, 155);
-            }
-            h1{
-                color: cadetblue;
-                border: 7px ;
-            }
-            
-        </style>
-        <h3>Hi! I have a basement which I call the gameroom</h3>
-        <h3>and I have a XBOX!My name is Clayton.</h3>
-           <h3>I have a bunk bed and amazing parents and cousins and my </h3>
-          <h3> One and Only Sister!That wraps up about my home!
-        </h3>
-        <h2>things about me:</h2>
-        <h4>I am creative</h4>
-        <h4>I can code</h4>
-        <h4>I am imaganative</h4>
-        <h4>I am intrested in: Dragons,Dinos,and Snakes</h4>
-        <h4>,also minecraft, roblox,</h4>
-        <h4>and chess, coding, and Jesus</h4>
-        <h2>my skills</h2>
-        <h3>Video Games</h3>
-        <h3>chess</h3>
-        <h3>coding</h3>
-        <h3>SNOOZIN</h3>
-        <a href="index.html">
-            click for previous webpage I have made
-        </a>
+<div class="menu"><button onclick="find_me('home')"> Home </button>   <button onclick="find_me('about_me')"> About Me </button>  <button onclick="find_me('hobbies')">Hobbies/Intrest</button> <button onclick="find_me('skills')"> skills</button> </button><button onclick="find_me('gallery')"> Gallery </button><button onclick="find_me('resourses')">Links/Resourses</button></div>
+
+   <div class="container" id="home">
+    <h1>Home</h1>
+    <p>I am making a project for my JHB coding class. This is the result of my webpage. </br> 
+    I hope you like it! </p>
+
+
         
-            
+        
+        </p>
+   </div>
+
+    
+   <div class="container" id="about_me">
+    <h1>About Me</h1>
+    <p>I live in Alan Linton Bilavard West, house number 6203. I have a bunk bed, but I </br>
+        usally sleep on the bottom bunk. My house has 3 storys, with a basement. I am </br>
+        8 years old turning nine this year!
+        </p></div>
+
+   <div class="container" id="hobbies">
+    <h1>Hobbies/Interest</h1>
+    <p>I am intrested in a lot of stuff like coding, chess, clubs, Jesus and God, </br>
+    dragons, dinos, snakes, school, eleectronics like my xbox, my pc, and my tv. </p>
+        
+        
+    <p>
+    by Makalynn Powell, Peer and Youth Policy Fellow
+    When I think of youth in the U.S., my first thought isn’t typically of young people using their voices to advocate for mental health accessibility and systematic reform. Thanks to the members of Mental Health America’s Youth Policy Accelerator (YPA), I’ve learned that young people are not only aware of the current challenges in mental health care but have also come up with real solutions. 
+    
+    The 2023 YPA cohort consists of ten advocates aged 18-25 who have led inspiring mental health policy initiatives. Each member has a story filled with passion, ambition, and fearlessness that they use to transform mental health resources in their communities. More importantly, they recognize the importance of mental health policy change in improving their peers' lives and shaping the lives of generations after them. 
+    
+    Their knowledge and understanding, driven by their lived experiences as young people, have led them to use their voices and enter spaces that historically excluded young people.
+    
+    Using personal challenges to reimagine support for youth by youth 
+    
+
+
+</p>
+
+   </div>
+
+   <div class="container" id="skills">
+    <h1>Skills</h1>
+    <p>I am extremely good at coding, chess, minecraft, roblox, bloxd.io, sleeping, </br>
+        and 17 more.
+     </p>
+   </div>
+
+   <div class="container" id="gallery">
+    <h1>Gallery</h1>
+    <p></p>
+   </div>
+
+   <div class="container" id="resourses">
+    <h1>Links/Resourses</h1>
+    <p></p>
+   </div>
+
+          
     </body>
 </html>
